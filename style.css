@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 8px 20px;
+    position: relative;
+    z-index: 10;
+}
+.navi ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.navi ul a{
+    text-decoration: none;
+    color: rgb(78, 77, 77);
+}
+.toko p span{
+    color: rgb(0, 0, 0);
+}
+.toko p{
+    color: rgb(90, 89, 89);
+}
+.bener{
+    background: rgb(0, 217, 255);
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    padding: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.text h3{
+    font-size: 30px;
+}
+.text h5 span{
+    color: red;
+}
+.text h5{
+    color: rgb(44, 44, 44);
+}
+.text button{
+    margin: 40px 0;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: red;
+}
+.card h3{
+    text-align: center;
+    margin: 50px 0;
+
+}
+.card{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.kartu img{
+    width: 300px;
+    margin: 5px ;
+    border-radius: 20px;
+}
+.kartu{
+    background: white;
+    width: 310px;
+    margin: 30px 10px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 10px 17px;
+    text-align: right;
+}
+.kartu p{
+    text-align: center;
+    font-weight: bold;
+}
+.kartu h4{
+    margin: 30px 0;
+    font-size: 15px;
+    color: rgb(66, 66, 66);
+    text-decoration: line-through;
+}
+.kartu h2{
+    color: red;
+}
+.kartu:hover{
+    color: white;
+    background: aqua;
+    box-shadow:inset 0 0 15px rgb(0, 47, 255);
+    box-shadow: 0 10px 15px rgb(0, 102, 255);
+}
+.kartu:hover h2{
+    color: yellow;
+}
+.kartu:hover h4{
+    color: white;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.kontak{
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hub{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+.kontak h2{
+    text-align: center;
+    padding: 50px 0;
+}
+.long{
+    grid-column: span 2;
+    display: grid;
+    align-items: flex-start;
+    gap: 15px;
+}
+.long textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    border: none;
+    padding: 15px 20px;
+    background: #e0e0e0;
+    resize: none;
+}
+.btn-kirim{
+    grid-column: span 2;
+    margin: auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    background: red;
+    color: white;
+    font-weight: bold;
+}
+.grup label{
+    font-size: 14px;
+}
+.grup{
+    display: grid;
+    align-items: center;
+    gap: 15px;
+}
+.grup input{
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+.tombol{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #333;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+.tombol.show{
+    visibility: visible;
+    opacity: 1;
+}
+.tombol:hover{
+    background: red;
+}
+.popup{
+    background: #804e4e38;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.kotak-popup{
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.popup button{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background: red;
+    color: white;
+}
+.popup.show{
+    opacity: 1;
+    visibility: visible;
+}
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .logo {
+        flex-direction: row;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+        justify-content: space-between;
+        display: flex;
+    }
+    .navi ul {
+        gap: 7px;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 10px;
+        align-items: center;
+    }
+.navi{
+    flex-shrink: 0;
+}
+    /* BANNER */
+    .bener {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .bener img {
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .text {
+        padding: 40px 20px;
+    }
+
+    .text p,
+    .text h3 {
+        font-size: 22px;
+    }
+
+    /* GRID PRODUK */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .kartu {
+        width: 80%;
+        height: auto;
+    }
+
+    .kartu img {
+        width: 95%;
+    }
+
+    /* FORM KONTAK */
+    .hub {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .long,
+    .btn-kirim {
+        grid-column: span 1;
+    }
+
+    /* TOMBOL TOP */
+    .tombol {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+}
